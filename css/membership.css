@@ -1,0 +1,346 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+div.logo {
+  text-align: center;
+  margin: 40px 0;
+}
+
+div.logo img {
+  width: 300px;
+  height: 80px;
+}
+
+nav {
+  padding-right: 100px;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  padding: 18px;
+}
+
+nav ul li a.active:before {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+nav ul li a.active:after {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 3px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  margin-bottom: 5px;
+  position: absolute;
+  top: -10px;
+}
+
+nav ul li a:hover:before {
+  height: 3px;
+}
+
+nav ul li a:after {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -10px;
+}
+
+nav ul li a:hover:after {
+  height: 3px;
+}
+
+div.img1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/interjer.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+div.img1 div.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.2;
+}
+
+div.img1 h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 70px;
+  padding-top: 100px;
+  margin-top: 0;
+}
+
+div.img1 p {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+  line-height: 1.7;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+div.m_50px {
+  height: 50px;
+}
+
+div.m_100px {
+  height: 100px;
+}
+
+div.text {
+  text-align: center;
+}
+
+div.text h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 55px;
+}
+
+div.text p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+div.punkt {
+  text-align: center;
+}
+
+div.punkt h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+div.punkt p {
+  margin-top: 70px;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+div.punkt1,
+div.punkt2,
+div.punkt3,
+div.punkt4,
+div.punkt5,
+div.punkt6,
+div.punkt7,
+div.punkt8,
+div.punkt9,
+div.punkt10 {
+  position: relative;
+}
+
+div.punkt1 div.back,
+div.punkt2 div.back,
+div.punkt3 div.back,
+div.punkt4 div.back,
+div.punkt5 div.back,
+div.punkt6 div.back,
+div.punkt7 div.back,
+div.punkt8 div.back,
+div.punkt9 div.back,
+div.punkt10 div.back {
+  top: -20%;
+  font-family: "Kirang Haerang", cursive;
+  color: #f0e0a2ff;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+div.punkt1 div.back p,
+div.punkt2 div.back p,
+div.punkt3 div.back p,
+div.punkt4 div.back p,
+div.punkt5 div.back p,
+div.punkt6 div.back p,
+div.punkt7 div.back p,
+div.punkt8 div.back p,
+div.punkt9 div.back p,
+div.punkt10 div.back p {
+  font-size: 30vh;
+  margin: 0;
+  line-height: 1;
+}
+
+div.punkt5 h2,
+div.punkt9 h2 {
+  margin-bottom: 60px;
+}
+
+div.punkt5 p,
+div.punkt9 p {
+  margin-top: 0;
+}
+
+div.svg1 {
+  text-align: center;
+}
+
+div.form {
+  background: url("../img/submit.jpg");
+  background-size: cover;
+}
+
+div.form div.text2 {
+  color: white;
+  text-align: center;
+}
+
+div.form div.text2 h2 {
+  margin: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+div.form div.text2 p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+div.form div.forma1 {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+div.form div.forma1 div {
+  display: inline;
+}
+
+div.form div.forma1 input {
+  background-color: transparent;
+  margin: 5px;
+  padding: 20px;
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+div.form div.forma1 textarea {
+  background-color: transparent;
+  padding: 20px;
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+div.form div.forma1 div.in1 {
+  margin: auto;
+}
+
+div.form div.forma1 ::-webkit-input-placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+div.form div.forma1 input[type="submit"] {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  width: 150px;
+  height: 60px;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+div.form div.forma1 input[type="submit"]:hover {
+  background: white;
+  color: black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+div.footer {
+  background: #f2f2f2ff;
+  text-align: center;
+}
+
+div.footer h2 {
+  margin: 0;
+  font-weight: lighter;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+div.footer div.soc {
+  margin: auto;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.footer img {
+  opacity: 0.7;
+}
+
+div.footer img:hover {
+  opacity: 1;
+}
+
+div.footer p {
+  margin-top: 70px;
+}
+/*# sourceMappingURL=membership.css.map */

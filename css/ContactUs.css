@@ -1,0 +1,258 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+div.m_100px {
+  height: 100px;
+}
+
+div.m_50px {
+  height: 50px;
+}
+
+div.logo {
+  text-align: center;
+  padding: 40px 0;
+}
+
+div.logo img {
+  width: 300px;
+  height: 80px;
+}
+
+nav {
+  padding-right: 100px;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  padding: 18px;
+}
+
+nav ul li a.active:before {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+nav ul li a.active:after {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 3px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  margin-bottom: 5px;
+  position: absolute;
+  top: -10px;
+}
+
+nav ul li a:hover:before {
+  height: 3px;
+}
+
+nav ul li a:after {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -10px;
+}
+
+nav ul li a:hover:after {
+  height: 3px;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("../img/7_contacts1.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+.container .flex {
+  padding-top: 100px;
+  width: 80%;
+  height: 250px;
+  margin: auto;
+}
+
+.container .flex img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .flex .img {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  background: #e5e6e8ff;
+}
+
+.container .flex .img:hover {
+  background: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .flex h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.container .flex p {
+  padding-top: 10px;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+.container .flex .adress {
+  margin-right: 20px;
+  vertical-align: bottom;
+  height: 250px;
+  display: inline-block;
+  width: 30%;
+  background: white;
+}
+
+.container .flex .adress .img {
+  margin-top: 30px;
+}
+
+.container .flex .adress:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .flex .phone {
+  margin-right: 20px;
+  height: 250px;
+  display: inline-block;
+  width: 30%;
+  background: white;
+}
+
+.container .flex .phone .img {
+  margin-top: 30px;
+}
+
+.container .flex .phone:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .flex .mail {
+  height: 250px;
+  display: inline-block;
+  width: 30%;
+  background: white;
+}
+
+.container .flex .mail .img {
+  margin-top: 30px;
+}
+
+.container .flex .mail:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+div.map {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.m_50px {
+  height: 50px;
+}
+
+div.footer {
+  background: #f2f2f2ff;
+  text-align: center;
+}
+
+div.footer h2 {
+  margin: 0;
+  font-weight: lighter;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+div.footer div.soc {
+  margin: auto;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.footer img {
+  opacity: 0.7;
+}
+
+div.footer img:hover {
+  opacity: 1;
+}
+
+div.footer p {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=ContactUs.css.map */

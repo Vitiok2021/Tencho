@@ -1,0 +1,363 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+div.logo {
+  text-align: center;
+  padding: 40px 0;
+}
+
+div.logo img {
+  width: 300px;
+  height: 80px;
+}
+
+nav {
+  padding-right: 100px;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  padding: 18px;
+}
+
+nav ul li a.active:before {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 3px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+nav ul li a.active:after {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 3px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  margin-bottom: 5px;
+  position: absolute;
+  top: -10px;
+}
+
+nav ul li a:hover:before {
+  height: 3px;
+}
+
+nav ul li a:after {
+  content: "";
+  display: block;
+  background: #d4aa00ff;
+  height: 0;
+  width: 100%;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -10px;
+}
+
+nav ul li a:hover:after {
+  height: 3px;
+}
+
+div.m_100px {
+  height: 100px;
+}
+
+div.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.2;
+}
+
+div.img1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/ruka_hand_dogovor.jpg__1290x895_q85_crop_subsampling-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+div.img1 h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 70px;
+  padding-top: 250px;
+  margin: 0;
+}
+
+div.text {
+  text-align: center;
+}
+
+div.text h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 55px;
+}
+
+div.text p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+div.block {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.block img {
+  width: 100%;
+}
+
+div.block div.block1 {
+  -webkit-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+div.block div.block1:hover {
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+div.block div.block1 div.block1__img {
+  padding: 10px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  margin: auto;
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+  background: #e5e6e8ff;
+  border-radius: 50%;
+}
+
+div.block div.block1 div.block1__img:hover {
+  background: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+div.block div.block1 div.block1__text {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+div.block div.block2 {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+}
+
+div.block div.block2:hover {
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+div.block div.block2 div.block2__img {
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+  background: #e5e6e8ff;
+  border-radius: 50%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+div.block div.block2 div.block2__img:hover {
+  background: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+div.block div.block2 div.block2__text {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+div.flex2 {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.form {
+  background: url("../img/submit.jpg");
+  background-size: cover;
+}
+
+div.form div.text2 {
+  color: white;
+  text-align: center;
+}
+
+div.form div.text2 h2 {
+  margin: 0;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+div.form div.text2 p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+div.form div.forma1 {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+div.form div.forma1 div {
+  display: inline;
+}
+
+div.form div.forma1 input {
+  background-color: transparent;
+  margin: 5px;
+  padding: 20px;
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+div.form div.forma1 textarea {
+  background-color: transparent;
+  padding: 20px;
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+div.form div.forma1 div.in1 {
+  margin: auto;
+}
+
+div.form div.forma1 ::-webkit-input-placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+div.form div.forma1 input[type="submit"] {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  width: 150px;
+  height: 60px;
+  border: 3px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+div.form div.forma1 input[type="submit"]:hover {
+  background: white;
+  color: black;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+div.footer {
+  background: #f2f2f2ff;
+  text-align: center;
+}
+
+div.footer h2 {
+  font-weight: lighter;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+div.footer div.soc {
+  margin: auto;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.footer img {
+  opacity: 0.7;
+}
+
+div.footer img:hover {
+  opacity: 1;
+}
+
+div.footer p {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=Prtners.css.map */
